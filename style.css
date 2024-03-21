@@ -6,6 +6,149 @@ body {
     font-family: Chilanka;
     margin: 0;
 }
+.Cloting {
+    height: 623px;  
+}
+
+.Burger-menu {
+    display: inline-block;
+    cursor: pointer;
+    width: 45px;
+    outline: none;
+}
+
+.Burger-btn {
+    display: none;
+}
+
+.Burger-menu:link {
+    position: absolute;
+    width: 100%;
+}
+
+/* Мобільні пристрої (розмір екрану менше 768px) */
+@media only screen and (max-width: 768px) {
+    /* CSS для мобільних пристроїв */
+    .container {
+        max-width: 100%;
+        transition: all 0.9s;
+    }
+    .Burger-btn {
+        display: block!important;
+        transition: all 0.9s;
+    }
+    .center-media-phone {
+        display: flex;
+        justify-content: center;
+        transition: all 0.9s;
+    }
+    .row-max {
+        max-width: 100%!important;
+        transition: all 0.9s;
+    }
+    .Foodies {
+        max-height: 100%;
+        max-width: 100%;
+        transition: all 0.9s;
+    }
+    .Cloting {
+        height: 2000px!important;
+        transition: all 0.9s;
+    }
+    .row-product {
+        height: 4248px!important;
+        transition: all 0.9s;
+    }
+    .img-wrapper {
+        max-width: 100%!important;
+        transition: all 0.9s;
+    }
+    .cloting-text {
+        font-size: 30px!important;
+        transition: all 0.9s;
+    }
+    .row-product {
+        justify-content: center!important;
+        transition: all 0.9s;
+    }
+    .Banner {
+        height: 1015px!important;
+        transition: all 0.9s;
+    }
+    .text-block {
+        max-width: 100%!important;
+        font-size: 30px!important;
+        transition: all 0.9s;
+    }
+    nav {
+        width: 100%;
+        transition: all 0.9s;
+    }
+    .banner-block {
+        max-width: 100%!important;
+        margin-top: 0px!important;
+        transition: all 0.9s;
+    }
+    .row-mobile {
+        justify-content: center!important;
+        transition: all 0.9s;
+    }
+    .banner-img {
+        max-width: 100%!important;
+        height: 469px!important;
+        transition: all 0.9s;
+    }
+    .products-card {
+        display: block!important;
+        transition: all 0.9s;
+    }
+    .Max {
+        max-width: 100%!important;
+        height: auto;
+        transition: all 0.9s;
+    }
+
+    .row {
+        max-width: 100%!important;
+        transition: all 0.9s;
+    }
+    .rowwing {
+        display: block!important;
+        transition: all 0.9s;
+    }
+    select, .list-nav, .col-1, .col-2 {
+        display: none!important;
+        transition: all 0.9;
+    }
+  }
+  
+  /* Планшетні пристрої (розмір екрану від 768px до 1024px) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* CSS для планшетних пристроїв */
+    .container {
+        max-width: 100%!important;
+        margin: 0 auto;
+    }
+    .Max {
+        max-width: 100%;
+        transition: all 0.9s;
+        height: auto;
+    }
+    .row {
+        max-width: 100%!important;
+        transition: all 0.9s;
+    }
+    select, .list-nav, .col-1, .col-2 {
+        display: none!important;
+    }
+  }
+  
+  /* Десктопні пристрої (розмір екрану більше 1024px) */
+  @media only screen and (min-width: 1024px) {
+    /* CSS для десктопних пристроїв */
+    
+  }
+  
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Chilanka;
@@ -17,8 +160,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     padding: 8px 12px;
     width: 1320px;
-    margin-left: 310px;
-    margin-right: 310px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .con-1 {
@@ -104,13 +247,11 @@ header {
 }
 
 .Main-menu {
-    display: flex;
     padding: 8px 0px;
 }
 
 .menu-list {
     display: flex;
-    width: 1320px;
     justify-content: space-between;
     height: 48px;
 }
@@ -127,6 +268,14 @@ header {
 }
 
 .list-nav {
+    display: flex;
+    gap: 1rem;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+}
+
+.list-nav-2 {
     display: flex;
     gap: 1rem;
     padding: 0px;
@@ -165,7 +314,6 @@ li {
 }
 
 .Max {
-    max-width: 100%;
     height: auto;
 }
 
@@ -373,4 +521,8 @@ li {
 
 .img-wrapper {
     padding: 0px 12px;
+}
+
+.Banner-2 {
+    background: #f9f3ec;
 }
