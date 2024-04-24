@@ -1,4 +1,6 @@
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
@@ -6,8 +8,17 @@ body {
     font-family: Chilanka;
     margin: 0;
 }
+
 .Cloting {
-    height: 623px;  
+    height: 623px;
+}
+
+.menu-list {
+    display: none;
+}
+
+.menu-list.active {
+    display: block;
 }
 
 .Burger-menu {
@@ -26,131 +37,203 @@ body {
     width: 100%;
 }
 
+.Burger-btn:active {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: #41403e;
+    top: auto;
+    font-size: 20px;
+
+}
+
+.menu-list.list-nav--active {
+    transform: translate(-500px);
+}
+
 /* Мобільні пристрої (розмір екрану менше 768px) */
 @media only screen and (max-width: 768px) {
+
     /* CSS для мобільних пристроїв */
     .container {
         max-width: 100%;
         transition: all 0.9s;
     }
+
+    .row-product {
+        height: max-content !important;
+    }
+
     .Burger-btn {
-        display: block!important;
+        display: block !important;
         transition: all 0.9s;
     }
+
     .center-media-phone {
         display: flex;
         justify-content: center;
         transition: all 0.9s;
     }
+
     .row-max {
-        max-width: 100%!important;
+        max-width: 100% !important;
         transition: all 0.9s;
     }
+
     .Foodies {
         max-height: 100%;
         max-width: 100%;
         transition: all 0.9s;
     }
+
     .Cloting {
-        height: 2000px!important;
+        height: 2000px !important;
         transition: all 0.9s;
     }
+
     .row-product {
-        height: 4248px!important;
+        height: max-content !important;
         transition: all 0.9s;
     }
+
     .img-wrapper {
-        max-width: 100%!important;
+        max-width: 100% !important;
         transition: all 0.9s;
     }
+
     .cloting-text {
-        font-size: 30px!important;
+        font-size: 30px !important;
         transition: all 0.9s;
     }
+
     .row-product {
-        justify-content: center!important;
+        justify-content: center !important;
         transition: all 0.9s;
     }
+
     .Banner {
-        height: 1015px!important;
+        height: 1015px !important;
         transition: all 0.9s;
     }
+
     .text-block {
-        max-width: 100%!important;
-        font-size: 30px!important;
+        max-width: 100% !important;
+        font-size: 30px !important;
         transition: all 0.9s;
     }
+
     nav {
         width: 100%;
         transition: all 0.9s;
     }
+
     .banner-block {
-        max-width: 100%!important;
-        margin-top: 0px!important;
+        max-width: 100% !important;
+        margin-top: 0px !important;
         transition: all 0.9s;
     }
+
     .row-mobile {
-        justify-content: center!important;
+        justify-content: center !important;
         transition: all 0.9s;
     }
+
     .banner-img {
-        max-width: 100%!important;
-        height: 469px!important;
+        max-width: 100% !important;
+        height: 469px !important;
         transition: all 0.9s;
     }
+
     .products-card {
-        display: block!important;
+        display: block !important;
         transition: all 0.9s;
+
     }
+
     .Max {
-        max-width: 100%!important;
+        max-width: 100% !important;
         height: auto;
         transition: all 0.9s;
     }
 
     .row {
-        max-width: 100%!important;
+        max-width: 100% !important;
         transition: all 0.9s;
     }
+
     .rowwing {
-        display: block!important;
+        display: block !important;
         transition: all 0.9s;
     }
-    select, .list-nav, .col-1, .col-2 {
-        display: none!important;
+
+    select,
+    .list-nav,
+    .col-1,
+    .col-2 {
+        display: none !important;
         transition: all 0.9;
     }
-  }
-  
-  /* Планшетні пристрої (розмір екрану від 768px до 1024px) */
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Планшетні пристрої (розмір екрану від 768px до 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
     /* CSS для планшетних пристроїв */
     .container {
-        max-width: 100%!important;
+        max-width: 100% !important;
         margin: 0 auto;
     }
+    .Banner {
+        max-width: 100%;
+        height: max-content!important;
+    }
+
+    .row-products {
+        max-width: 100%;
+    }
+
+    .row-product {
+        height: max-content !important;
+    }
+
+    .product-card {
+        max-width: 100%;
+    }
+
     .Max {
         max-width: 100%;
+        width: 600px;
         transition: all 0.9s;
         height: auto;
     }
+
     .row {
-        max-width: 100%!important;
+        justify-content: space-evenly !important;
+        max-width: 100% !important;
         transition: all 0.9s;
     }
-    select, .list-nav, .col-1, .col-2 {
-        display: none!important;
-    }
-  }
-  
-  /* Десктопні пристрої (розмір екрану більше 1024px) */
-  @media only screen and (min-width: 1024px) {
-    /* CSS для десктопних пристроїв */
-    
-  }
-  
 
-h1, h2, h3, h4, h5, h6 {
+    select,
+    .list-nav,
+    .col-1,
+    .col-2 {
+        display: none !important;
+    }
+}
+
+/* Десктопні пристрої (розмір екрану більше 1024px) */
+@media only screen and (min-width: 1024px) {
+    /* CSS для десктопних пристроїв */
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Chilanka;
     font-weight: 400;
     text-transform: capitalize;
@@ -391,6 +474,8 @@ li {
 .text-a {
     display: flex;
     align-items: center;
+    height: 60px;
+    font-size: 15px;
 }
 
 .svg-stick {
@@ -479,7 +564,6 @@ li {
 
 .row-product {
     position: relative;
-    height: 1053.92px;
 }
 
 .Dog-item {
@@ -488,12 +572,14 @@ li {
     padding: 0px 12px;
     margin: 24px 0px;
 }
+
 .Cat-item {
     height: 478px;
     padding: 0px 12px;
     margin: 24px 0px;
     width: 330px;
 }
+
 .Bird-item {
     height: 474px;
     padding: 0px 12px;
@@ -525,4 +611,25 @@ li {
 
 .Banner-2 {
     background: #f9f3ec;
+    height: 763px;
+
+    .row {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        justify-content: center;
+    }
+}
+
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
