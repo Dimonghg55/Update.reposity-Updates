@@ -63,10 +63,20 @@ body {
     .row-product {
         height: max-content !important;
     }
-
+    input {
+        max-width: 100%;
+    }
     .Burger-btn {
         display: block !important;
         transition: all 0.9s;
+        background-color: white;
+        border: 1px solid #5c6064;
+    }
+    .img-insta {
+        max-width: 68px;
+    }
+     .container .row-wrap {
+        flex-wrap: wrap;
     }
 
     .center-media-phone {
@@ -128,7 +138,7 @@ body {
     }
 
     .banner-block {
-        max-width: 100% !important;
+        max-width: 100% !important; 
         margin-top: 0px !important;
         transition: all 0.9s;
     }
@@ -143,7 +153,36 @@ body {
         height: 469px !important;
         transition: all 0.9s;
     }
-
+    .col-blog-img {
+        max-width: 100%;
+    }
+     .block-center .font-style {
+        width: 210px;
+        font-size: 50px;
+    }
+    .block-center .content-wrapper {
+        justify-content: center;
+    }
+    .col-Author .text-Nominal {
+        font-size: 25px;
+    }
+    .Author-block .col-Author {
+        margin: 0;
+    }
+    .row .Author-block {
+        width: 100%;
+    }
+    .row .registration-md {
+        width: 100%;
+        margin: 0px;
+    }
+    .registration-md .text-register {
+        font-size: 50px;
+    }
+    .mb-3 .form-btn {
+        width: 100%;
+    }
+     
     .products-card {
         display: block !important;
         transition: all 0.9s;
@@ -154,6 +193,10 @@ body {
         max-width: 100% !important;
         height: auto;
         transition: all 0.9s;
+    }
+     .container .block-center {
+        display: block;
+        margin: 0px;
     }
 
     .row {
@@ -598,6 +641,7 @@ li {
 .img-banner-2 {
     max-width: 100%;
     height: auto;
+    width: 550px;
 }
 
 .font {
@@ -611,7 +655,6 @@ li {
 
 .Banner-2 {
     background: #f9f3ec;
-    height: 763px;
 
     .row {
         padding-top: 0rem;
@@ -627,9 +670,180 @@ li {
 }
 
 .content-wrapper {
+    height: 428px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    margin-top: 100px;
+}
 
+.block-content {
+    padding: 21px;
+}
+.font-style {
+    font-size: 80px;
+    margin: 3px;
+    width: 454px;
+}
+.img-wrapper {
+    width: 636px;
+}
+.block-center {
+    display: flex;
+    text-align: center;
+    margin-left: 120px;
+    margin-right: 30px;
+    margin-top: 100px;
+}
+
+.row-cont {
+    width: 100%;
+}
+.button-section {
+    width: 212px;
+    height: 68px;
+    border: solid 1px #41403e;
+    font-family: Chilanka;
+    font-size: 20px;
+    background-color: #f9f3ec;
+}
+
+.Author-section {
+    background-color: white;
+}
+
+.Author-block {
+    width: 83%;
+    margin-left: 8%;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 400px;
+}
+
+.text-oniel {
+    font-size: 13rem;
+    margin: 0px;
+}
+.col-Author {
+    margin-left: 120px;
+    padding-bottom: 60px;
+}
+.text-Nominal {
+    font-size: 32px;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.text-Auther {
+    margin: 0;
+}
+
+.Best-Sell {
+    margin-bottom: 40px;
+}
+
+.row-mab {
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.registration-md {
+    width: 50%;
+    margin-left: 25%;
+}
+.Register {
+    background-image: url(/img/background-img.png);
+}
+.text-register {
+    font-size: 64px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.mb-3 {
+    height: 64px;
+    margin-bottom: 8px;
+}
+.form-block {
+    width: 100%;
+    height: 64px;
+    outline: none;
+}
+.form-btn {
+    background-color: #212529;
+    height: 64px;
+    border: 1px solid #41403e;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 17px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.Blog-Wwaggy {
+    background-color: #FFF;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.col-blog {
+    width: 440px;
+    height: 629px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.text-body {
+    font-size: 28px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    margin: 0px;
+}
+.blog-text {
+    color: #908F8D;
+    margin: 0px;
+}
+.text-blog {
+    font-size: 23px;
+    margin: 0px;
+}
+.card-calendar {
+    position: absolute;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(248 248 248);
+    margin: 8px;
+    border-radius: 5px;
+}
+.text-blog2 {
+    font-family: Montserrat;
+    margin: 0px;
+}
+.text-blog3 {
+    font-size: 25px;
+}
+.link {
+    border-bottom: 1px solid #5c6064;
+}
+.card-text {
+    margin-bottom: 20px
+}
+.service-col {
+    font-size: 30px;
+    width: 85px;
+    height: 78px;
+    text-align: center;
+    border-radius: 3.125rem;
+    border: 1px solid #D9D9D8;
+    padding: 1.25rem;
+}
+.card-mb {
+    font-size: 28px;
+}
+.row-wrap {
+    flex-wrap: nowrap;
+}
+.col-service {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
