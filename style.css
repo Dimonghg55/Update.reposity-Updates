@@ -73,7 +73,10 @@ body {
         border: 1px solid #5c6064;
     }
     .img-insta {
-        max-width: 68px;
+        max-width: 58px;
+    }
+    .Insta .gap {
+        gap: 0px;
     }
      .container .row-wrap {
         flex-wrap: wrap;
@@ -846,4 +849,24 @@ li {
     margin-left: 10px;
     padding-left: 10px;
     padding-right: 10px;
+}
+.footer-menu {
+    width: 306px;
+}
+.footer-menu ul {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+.menu-item {
+    margin-top: 5px;
+}
+.col-md-3 {
+    width: 306px;
+}
+.gap {
+    gap: 8px;
+}
+.search-bar {
+    width: 100%;
 }
